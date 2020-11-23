@@ -28,6 +28,7 @@ def test(fmt):
 
     msp.add_lwpolyline(rect2)
 
+# Bai lam cua Son
     dimh1 = msp.add_linear_dim(
         base=(950, 760), p1=(150, 760), p2=(800, 760),
         dimstyle=fmt,
@@ -125,6 +126,7 @@ def test(fmt):
     )
     dimv5.set_arrows(blk="OPEN90")
     dimv5.render()
+# Bai lam cua Son
 
     doc.saveas('demo5.dxf')
 
