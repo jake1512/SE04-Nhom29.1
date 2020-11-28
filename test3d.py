@@ -6,13 +6,10 @@ def test(fmt):
     ezdxf.setup_dimstyle(doc, fmt)
 
     # line Dashe
-    my_line_types = [
-        ('DASHED1', 'DASHED - - - - - - - - - ', [8.0, 5.0, -3.0])
-    ]
-    # rect = [(775, 525), (138, 525), (138, 515), (775, 515)]
-    rect = [(800, 630), (160, 630), (160, 615), (800, 615)]
-    msp.add_lwpolyline(rect, dxfattribs={'linetype' : 'DASHED1'})
-    doc.linetypes.new('DASHED1', dxfattribs={'pattern' : [8.0, 5.0, -3.0]})
+    # doc.layers.new(name='MyLines', dxfattribs={'linetype': 'DASHEDX2', 'color': 7, 'dimexe': 0.3})
+    # msp.add_line((160, 630), (800, 630), dxfattribs={'layer': 'MyLines'})
+    # msp.add_line((160, 615), (800, 615), dxfattribs={'layer': 'MyLines'})
+    # msp.add_line((160, 615), (160, 630), dxfattribs={'layer': 'MyLines'})
  
     # Big msp
     rect1 = ([
@@ -69,6 +66,6 @@ def test(fmt):
     dimv2.set_arrows(blk="")
     dimv2.render()
 
-    doc.saveas('ditmm.dxf')
+    doc.saveas('test.dxf')
 
 test('EZ_CM_100_H25_CM')
