@@ -1,4 +1,3 @@
-import ezdxf
 import xml.etree.ElementTree as ET
 
 def get_xml_data(filename):
