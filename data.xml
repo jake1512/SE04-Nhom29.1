@@ -1,0 +1,360 @@
+<Root>
+  <Cabinet Name="Left open Cabinet" Length="400" Width="550" Height="650">
+    <Panels>
+      <Panel IsProduce="true" Thickness="18" Length="650" Width="550" ID="001" CabinetPanelNo="1-001" Name="Left Board" edgeMaterial="Ván ép gỗ thích 18mm" MachiningPoint="5" Grain="H" BasicMaterial="Solid Wood" DoorDirection="" Category="Board" thickLength="650" thinLength="1750"  slotDis="20.00" slotFace="1" HasHorizontalHole="0" ActualLength="648.8" ActualWidth="548.2">
+        <EdgeGroup X1="0" Y1="0">
+          <Edge Face="1" LindID="1" Thickness="0.6" EdgeType="B" Length="550" Pre_Milling="0" X="0" Y="0" CentralAngle="0"/>
+          <Edge Face="2" LindID="2" Thickness="1.2" EdgeType="H" Length="650" Pre_Milling="0" X="0" Y="0" CentralAngle="0"/>
+          <Edge Face="3" LindID="3" Thickness="0.6" EdgeType="B" Length="550" Pre_Milling="0" X="0" Y="0" CentralAngle="0"/>
+          <Edge Face="4" LindID="4" Thickness="0.6" EdgeType="B" Length="650" Pre_Milling="0" X="0" Y="0" CentralAngle="0"/>
+        </EdgeGroup>
+        <Machines>
+          <Machining ID="000001" IsGenCode="2" Type="3" Face="6" X="650.00" Y="525.00" Depth="6.50" Width="10.00" ToolName="Dao khía">
+            <Lines>
+              <Line LineID="1" EndX="13.00" EndY="525.00" Angle="0" Thickness="0"/>
+            </Lines>
+          </Machining>
+        </Machines>
+        <Panels/>
+      </Panel>
+      <Panel IsProduce="true" Thickness="18" Length="650" Width="550" ID="002" CabinetPanelNo="1-002" Name="Right panel" edgeMaterial="Ván ép gỗ thích 18mm" MachiningPoint="5" Grain="H" BasicMaterial="Solid Wood" DoorDirection="" Category="Board" thickLength="650" thinLength="1750"  slotDis="20.00" slotFace="0" HasHorizontalHole="0" ActualLength="648.8" ActualWidth="548.2">
+        <EdgeGroup X1="0" Y1="0">
+          <Edge Face="1" LindID="1" Thickness="0.6" EdgeType="B" Length="550" Pre_Milling="0" X="0" Y="0" CentralAngle="0"/>
+          <Edge Face="2" LindID="2" Thickness="1.2" EdgeType="H" Length="650" Pre_Milling="0" X="0" Y="0" CentralAngle="0"/>
+          <Edge Face="3" LindID="3" Thickness="0.6" EdgeType="B" Length="550" Pre_Milling="0" X="0" Y="0" CentralAngle="0"/>
+          <Edge Face="4" LindID="4" Thickness="0.6" EdgeType="B" Length="650" Pre_Milling="0" X="0" Y="0" CentralAngle="0"/>
+        </EdgeGroup>
+        <Machines>
+          <Machining ID="000002" IsGenCode="2" Type="3" Face="5" X="650.00" Y="525.00" Depth="6.50" Width="10.00" ToolName="Dao khía">
+            <Lines>
+              <Line LineID="1" EndX="13.00" EndY="525.00" Angle="0" Thickness="0"/>
+            </Lines>
+          </Machining>
+        </Machines>
+        <Panels/>
+      </Panel>
+      <Panel IsProduce="true" Thickness="18" Length="364" Width="550" ID="003" CabinetPanelNo="1-003" Name="Floor" edgeMaterial="Ván ép gỗ thích 18mm" MachiningPoint="5" Grain="H" BasicMaterial="Solid Wood" DoorDirection="" Category="Board" thickLength="364" thinLength="1464"  slotDis="20.00" slotFace="0" HasHorizontalHole="0" ActualLength="362.8" ActualWidth="548.2">
+        <EdgeGroup X1="0" Y1="0">
+          <Edge Face="1" LindID="1" Thickness="0.6" EdgeType="B" Length="550" Pre_Milling="0" X="0" Y="0" CentralAngle="0"/>
+          <Edge Face="2" LindID="2" Thickness="1.2" EdgeType="H" Length="364" Pre_Milling="0" X="0" Y="0" CentralAngle="0"/>
+          <Edge Face="3" LindID="3" Thickness="0.6" EdgeType="B" Length="550" Pre_Milling="0" X="0" Y="0" CentralAngle="0"/>
+          <Edge Face="4" LindID="4" Thickness="0.6" EdgeType="B" Length="364" Pre_Milling="0" X="0" Y="0" CentralAngle="0"/>
+        </EdgeGroup>
+        <Machines>
+          <Machining ID="000003" IsGenCode="2" Type="3" Face="5" X="364.00" Y="525.00" Depth="6.50" Width="10.00" ToolName="Dao khía">
+            <Lines>
+              <Line LineID="1" EndX="0.00" EndY="525.00" Angle="0" Thickness="0"/>
+            </Lines>
+          </Machining>
+        </Machines>
+        <Panels/>
+      </Panel>
+      <Panel IsProduce="true" Thickness="9" Length="637" Width="374" ID="004" CabinetPanelNo="1-004" Name="Thin back plate" edgeMaterial="Ván ép gỗ thích 18mm" MachiningPoint="5" Grain="H" BasicMaterial="Solid Wood" DoorDirection="" Category="Board" thickLength="0" thinLength="0"  HasHorizontalHole="0" ActualLength="637" ActualWidth="374">
+        <EdgeGroup X1="0" Y1="0">
+          <Edge Face="1" LindID="1" Thickness="0" EdgeType="N" Length="374" Pre_Milling="0" X="0" Y="0" CentralAngle="0"/>
+          <Edge Face="2" LindID="2" Thickness="0" EdgeType="N" Length="637" Pre_Milling="0" X="0" Y="0" CentralAngle="0"/>
+          <Edge Face="3" LindID="3" Thickness="0" EdgeType="N" Length="374" Pre_Milling="0" X="0" Y="0" CentralAngle="0"/>
+          <Edge Face="4" LindID="4" Thickness="0" EdgeType="N" Length="637" Pre_Milling="0" X="0" Y="0" CentralAngle="0"/>
+        </EdgeGroup>
+        <Machines/>
+        <Panels/>
+      </Panel>
+      <Panel IsProduce="true" Thickness="18" Length="364" Width="80" ID="005" CabinetPanelNo="1-005" Name="Back Pull Bar" edgeMaterial="Ván ép gỗ thích 18mm" MachiningPoint="5" Grain="V" BasicMaterial="Solid Wood" DoorDirection="" Category="Board" thickLength="0" thinLength="888"  HasHorizontalHole="0" ActualLength="362.8" ActualWidth="78.8">
+        <EdgeGroup X1="0" Y1="0">
+          <Edge Face="1" LindID="1" Thickness="0.6" EdgeType="B" Length="364" Pre_Milling="0" X="0" Y="0" CentralAngle="0"/>
+          <Edge Face="2" LindID="2" Thickness="0.6" EdgeType="B" Length="80" Pre_Milling="0" X="0" Y="0" CentralAngle="0"/>
+          <Edge Face="3" LindID="3" Thickness="0.6" EdgeType="B" Length="364" Pre_Milling="0" X="0" Y="0" CentralAngle="0"/>
+          <Edge Face="4" LindID="4" Thickness="0.6" EdgeType="B" Length="80" Pre_Milling="0" X="0" Y="0" CentralAngle="0"/>
+        </EdgeGroup>
+        <Machines/>
+        <Panels/>
+      </Panel>
+      <Panel IsProduce="true" Thickness="18" Length="364" Width="80" ID="006" CabinetPanelNo="1-006" Name="Cover board-Horizontal dress" edgeMaterial="Ván ép gỗ thích 18mm" MachiningPoint="5" Grain="H" BasicMaterial="Solid Wood" DoorDirection="" Category="Board" thickLength="364" thinLength="524"  HasHorizontalHole="0" ActualLength="362.8" ActualWidth="78.2">
+        <EdgeGroup X1="0" Y1="0">
+          <Edge Face="1" LindID="1" Thickness="0.6" EdgeType="B" Length="80" Pre_Milling="0" X="0" Y="0" CentralAngle="0"/>
+          <Edge Face="2" LindID="2" Thickness="1.2" EdgeType="H" Length="364" Pre_Milling="0" X="0" Y="0" CentralAngle="0"/>
+          <Edge Face="3" LindID="3" Thickness="0.6" EdgeType="B" Length="80" Pre_Milling="0" X="0" Y="0" CentralAngle="0"/>
+          <Edge Face="4" LindID="4" Thickness="0.6" EdgeType="B" Length="364" Pre_Milling="0" X="0" Y="0" CentralAngle="0"/>
+        </EdgeGroup>
+        <Machines/>
+        <Panels/>
+      </Panel>
+      <Panel IsProduce="true" Thickness="18" Length="364" Width="518" ID="007" CabinetPanelNo="1-007" Name="Active Layer Board" edgeMaterial="Ván ép gỗ thích 18mm" MachiningPoint="5" Grain="H" BasicMaterial="Solid Wood" DoorDirection="" Category="Board" thickLength="364" thinLength="1400"  HasHorizontalHole="0" ActualLength="362.8" ActualWidth="516.2">
+        <EdgeGroup X1="0" Y1="0">
+          <Edge Face="1" LindID="1" Thickness="0.6" EdgeType="B" Length="518" Pre_Milling="0" X="0" Y="0" CentralAngle="0"/>
+          <Edge Face="2" LindID="2" Thickness="1.2" EdgeType="H" Length="364" Pre_Milling="0" X="0" Y="0" CentralAngle="0"/>
+          <Edge Face="3" LindID="3" Thickness="0.6" EdgeType="B" Length="518" Pre_Milling="0" X="0" Y="0" CentralAngle="0"/>
+          <Edge Face="4" LindID="4" Thickness="0.6" EdgeType="B" Length="364" Pre_Milling="0" X="0" Y="0" CentralAngle="0"/>
+        </EdgeGroup>
+        <Machines/>
+        <Panels/>
+      </Panel>
+      <Panel IsProduce="true" Thickness="18" Length="642" Width="397" ID="008" CabinetPanelNo="1-008" Name="bbbbbbbbbbbbbbbbbbb" Material="Gỗ óc chó" edgeMaterial="Gỗ óc chó" MachiningPoint="5" Grain="V" BasicMaterial="Solid Wood Multilayer Board" DoorDirection="Cánh mở bên trái" Category="Door" thickLength="2078" thinLength="0"  HasHorizontalHole="0" ActualLength="639.6" ActualWidth="394.6">
+        <EdgeGroup X1="0" Y1="0">
+          <Edge Face="1" LindID="1" Thickness="1.2" EdgeType="H" Length="642" Pre_Milling="0" X="0" Y="0" CentralAngle="0"/>
+          <Edge Face="2" LindID="2" Thickness="1.2" EdgeType="H" Length="397" Pre_Milling="0" X="0" Y="0" CentralAngle="0"/>
+          <Edge Face="3" LindID="3" Thickness="1.2" EdgeType="H" Length="642" Pre_Milling="0" X="0" Y="0" CentralAngle="0"/>
+          <Edge Face="4" LindID="4" Thickness="1.2" EdgeType="H" Length="397" Pre_Milling="0" X="0" Y="0" CentralAngle="0"/>
+        </EdgeGroup>
+        <Machines/>
+        <Panels/>
+      </Panel>
+    </Panels>
+    <Metals>
+      <Metal Name="Anchor" length="75" width="60" height="80" Num="4"/>
+      <Metal Name="YX" length="23" width="20" height="23" Num="1"/>
+    </Metals>
+    <Part name="Left open Cabinet" type="unit" ID="000">
+      <Values PX="0" PY="0" PZ="0">
+        <W>400</W>
+        <D>550</D>
+        <H>650</H>
+        <PX>-325.07</PX>
+        <PY>1840</PY>
+        <PZ>100</PZ>
+        <RX>0</RX>
+        <RY>0</RY>
+        <RZ>2.8421709430404014e-14</RZ>
+        <BLM>0</BLM>
+        <BRM>400</BRM>
+        <BUM>750</BUM>
+        <BDM>100</BDM>
+        <BFM>550</BFM>
+        <BBM>0</BBM>
+      </Values>
+      <FaceBoard>
+        <PointDef posX="0" posY="0" type="0"/>
+        <PointDef posX="0" posY="550" type="0"/>
+        <PointDef posX="650" posY="550" type="0"/>
+        <PointDef posX="650" posY="0" type="0"/>
+      </FaceBoard>
+      <Part name="Left Board" type="cabinet_board" ID="001">
+        <Values>
+          <W>650</W>
+          <D>550</D>
+          <H>18</H>
+          <PX>18</PX>
+          <PY>0</PY>
+          <PZ>0</PZ>
+          <RX>0</RX>
+          <RY>-90</RY>
+          <RZ>0</RZ>
+          <BLM>0</BLM>
+          <BRM>18.00000000000004</BRM>
+          <BUM>650</BUM>
+          <BDM>0</BDM>
+          <BFM>550</BFM>
+          <BBM>0</BBM>
+        </Values>
+        <FaceBoard>
+          <PointDef posX="0" posY="0" type="0"/>
+          <PointDef posX="0" posY="550" type="0"/>
+          <PointDef posX="650" posY="550" type="0"/>
+          <PointDef posX="650" posY="0" type="0"/>
+        </FaceBoard>
+      </Part>
+      <Part name="Right panel" subType="" type="cabinet_board" ID="002">
+        <Values>
+          <W>650</W>
+          <D>550</D>
+          <H>18</H>
+          <PX>400</PX>
+          <PY>0</PY>
+          <PZ>0</PZ>
+          <RX>0</RX>
+          <RY>-90</RY>
+          <RZ>0</RZ>
+          <BLM>382</BLM>
+          <BRM>400.00000000000006</BRM>
+          <BUM>650</BUM>
+          <BDM>0</BDM>
+          <BFM>550</BFM>
+          <BBM>0</BBM>
+        </Values>
+        <FaceBoard>
+          <PointDef posX="0" posY="0" type="0"/>
+          <PointDef posX="0" posY="550" type="0"/>
+          <PointDef posX="650" posY="550" type="0"/>
+          <PointDef posX="650" posY="0" type="0"/>
+        </FaceBoard>
+      </Part>
+      <Part name="Floor" subType="" type="cabinet_board" ID="003">
+        <Values>
+          <W>364</W>
+          <D>550</D>
+          <H>18</H>
+          <PX>18</PX>
+          <PY>0</PY>
+          <PZ>0</PZ>
+          <RX>0</RX>
+          <RY>0</RY>
+          <RZ>0</RZ>
+          <BLM>18</BLM>
+          <BRM>381.99999999999994</BRM>
+          <BUM>18</BUM>
+          <BDM>0</BDM>
+          <BFM>550</BFM>
+          <BBM>0</BBM>
+        </Values>
+        <FaceBoard>
+          <PointDef posX="0" posY="0" type="0"/>
+          <PointDef posX="0" posY="550" type="0"/>
+          <PointDef posX="364" posY="550" type="0"/>
+          <PointDef posX="364" posY="0" type="0"/>
+        </FaceBoard>
+      </Part>
+      <Part name="Thin back plate" subType="" type="cabinet_board" ID="004">
+        <Values>
+          <W>637</W>
+          <D>374</D>
+          <H>9</H>
+          <PX>13</PX>
+          <PY>-20.5</PY>
+          <PZ>13</PZ>
+          <RX>0</RX>
+          <RY>-90</RY>
+          <RZ>90</RZ>
+          <BLM>13</BLM>
+          <BRM>386.99999999999994</BRM>
+          <BUM>650</BUM>
+          <BDM>13</BDM>
+          <BFM>29.50000000000184</BFM>
+          <BBM>-20.500000000001776</BBM>
+        </Values>
+        <FaceBoard>
+          <PointDef posX="0" posY="0" type="0"/>
+          <PointDef posX="0" posY="374" type="0"/>
+          <PointDef posX="637" posY="374" type="0"/>
+          <PointDef posX="637" posY="0" type="0"/>
+        </FaceBoard>
+      </Part>
+      <Part name="Back Pull Bar" type="cabinet_board" ID="005">
+        <Values PX="0" PY="0" PZ="0" RX="0" RY="0" RZ="-90">
+          <W>80</W>
+          <D>364</D>
+          <H>18</H>
+          <PX>18</PX>
+          <PY>-29.5</PY>
+          <PZ>570</PZ>
+          <RX>0</RX>
+          <RY>-90</RY>
+          <RZ>90</RZ>
+          <BLM>18</BLM>
+          <BRM>381.99999999999994</BRM>
+          <BUM>650</BUM>
+          <BDM>570</BDM>
+          <BFM>47.4999999999982</BFM>
+          <BBM>-29.499999999998177</BBM>
+        </Values>
+        <FaceBoard>
+          <PointDef posX="0" posY="0" type="0"/>
+          <PointDef posX="0" posY="364" type="0"/>
+          <PointDef posX="80" posY="364" type="0"/>
+          <PointDef posX="80" posY="0" type="0"/>
+        </FaceBoard>
+      </Part>
+      <Part name="Cover board-Horizontal dress" type="cabinet_board" ID="006">
+        <Values>
+          <W>364</W>
+          <D>80</D>
+          <H>18</H>
+          <PX>18</PX>
+          <PY>-470</PY>
+          <PZ>632</PZ>
+          <RX>0</RX>
+          <RY>0</RY>
+          <RZ>0</RZ>
+          <BLM>18</BLM>
+          <BRM>381.99999999999994</BRM>
+          <BUM>650</BUM>
+          <BDM>632</BDM>
+          <BFM>550</BFM>
+          <BBM>-470</BBM>
+        </Values>
+        <FaceBoard>
+          <PointDef posX="0" posY="0" type="0"/>
+          <PointDef posX="0" posY="80" type="0"/>
+          <PointDef posX="364" posY="80" type="0"/>
+          <PointDef posX="364" posY="0" type="0"/>
+        </FaceBoard>
+      </Part>
+      <Part name="Active Layer Board" type="functor" ID="000">
+        <Values>
+          <W>364</W>
+          <D>520.5</D>
+          <H>18</H>
+          <PX>18</PX>
+          <PY>-29.5</PY>
+          <PZ>316</PZ>
+          <RX>0</RX>
+          <RY>0</RY>
+          <RZ>0</RZ>
+          <BLM>18</BLM>
+          <BRM>381.99999999999994</BRM>
+          <BUM>333.99999999999994</BUM>
+          <BDM>316</BDM>
+          <BFM>549.9999999999981</BFM>
+          <BBM>-29.49999999999818</BBM>
+        </Values>
+        <FaceBoard>
+          <PointDef posX="0" posY="0" type="0"/>
+          <PointDef posX="0" posY="518" type="0"/>
+          <PointDef posX="364" posY="518" type="0"/>
+          <PointDef posX="364" posY="0" type="0"/>
+        </FaceBoard>
+        <Part name="Active Layer Board" type="cabinet_board" ID="007">
+          <Values>
+            <W>364</W>
+            <D>518</D>
+            <H>18</H>
+            <PX>0</PX>
+            <PY>-0.5</PY>
+            <PZ>0</PZ>
+            <RX>0</RX>
+            <RY>0</RY>
+            <RZ>0</RZ>
+            <BLM>0</BLM>
+            <BRM>363.99999999999994</BRM>
+            <BUM>18</BUM>
+            <BDM>0</BDM>
+            <BFM>518.5000000000017</BFM>
+            <BBM>-0.500000000001819</BBM>
+          </Values>
+          <FaceBoard>
+            <PointDef posX="0" posY="0" type="0"/>
+            <PointDef posX="0" posY="518" type="0"/>
+            <PointDef posX="364" posY="518" type="0"/>
+            <PointDef posX="364" posY="0" type="0"/>
+          </FaceBoard>
+        </Part>
+      </Part>
+      <Part name="Cover Doors" type="swingDoorLeafEntity" ID="008">
+        <Values PX="0" PY="0" PZ="0" RX="-45" RY="-90" RZ="-45">
+          <W>397</W>
+          <D>18</D>
+          <H>642</H>
+          <PX>0</PX>
+          <PY>0</PY>
+          <PZ>0</PZ>
+          <RX>0</RX>
+          <RY>0</RY>
+          <RZ>0</RZ>
+          <BLM>0</BLM>
+          <BRM>397</BRM>
+          <BUM>642</BUM>
+          <BDM>0</BDM>
+          <BFM>18</BFM>
+          <BBM>0</BBM>
+        </Values>
+        <FaceBoard>
+          <PointDef posX="0" posY="0" type="0"/>
+          <PointDef posX="0" posY="642" type="0"/>
+          <PointDef posX="397" posY="642" type="0"/>
+          <PointDef posX="397" posY="0" type="0"/>
+        </FaceBoard>
+      </Part>
+    </Part>
+  </Cabinet>
+  <baseLine/>
+  <tables/>
+</Root>
