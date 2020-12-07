@@ -9,7 +9,7 @@ def test(fmt):
     my_line_types = [
         ('DASHED1', 'DASHED - - - - - - - - - ', [8.0, 5.0, -3.0])
     ]
-    # rect = [(775, 525), (138, 525), (138, 515), (775, 515)]
+    
     rect = [(800, 630), (160, 630), (160, 615), (800, 615)]
     msp.add_lwpolyline(rect, dxfattribs={'linetype' : 'DASHED1'})
     doc.linetypes.new('DASHED1', dxfattribs={'pattern' : [8.0, 5.0, -3.0]})
