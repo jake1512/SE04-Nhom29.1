@@ -8,14 +8,8 @@ msp = doc.modelspace()
 # get data from data.xml file
 W , D, H, PX, PY, PZ, RX, RY, RZ, posXY = get_xml_data('./data.xml')
 
+# set keys
 keys = ['000', '001', '002', '003', '004', '005', '006', '007', '008']
-
-my_line_types = [
-    ('DASHED1', 'DASHED - - - - - - - - - ', [8.0, 5.0, -3.0])
-]
-doc.linetypes.new('DASHED1', dxfattribs={'pattern' : [8.0, 5.0, -3.0]})
-
-
         
 def make_dims(p1, p2, distance):
     dim = msp.add_aligned_dim(p1=p1, p2=p2, distance=distance, override={'dimclrd' : 1, 'dimclre' : 1, 'dimtad' : 0, 'dimfxlon' : 1, 'dimexe' : 7, 'dimfxl' : 7, 'dimtxt' : 14})
