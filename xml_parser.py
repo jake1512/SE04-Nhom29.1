@@ -4,6 +4,7 @@ def get_xml_data(filename):
     tree = ET.parse(filename)
     root = tree.getroot()
     
+    name = dict()
     W = dict()
     D = dict()
     H = dict()
@@ -15,6 +16,7 @@ def get_xml_data(filename):
         # print(part.attrib)
         id = part.get('ID')
         key = id
+        name[key] = part.get('name')
         for value in part.iter('Values'):
             W[key] = (float) (value.find('W').text)
             D[key] = (float) (value.find('D').text)
@@ -32,4 +34,4 @@ def get_xml_data(filename):
             y = (float) (pointdef.get('posY'))
             posxy.append((x, y))
         posXY[key] = posxy
-    return W, D, H, PX, PY, PZ, RX, RY, RZ, posXY
+    return name, W, D, H, PX, PY, PZ, RX, RY, RZ, posXY
