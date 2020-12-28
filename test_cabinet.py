@@ -1,5 +1,6 @@
 import ezdxf
 from xml_parser import get_xml_data
+from ezdxf.math import Vec2
 
 
 doc = ezdxf.new()
@@ -27,7 +28,7 @@ def make_dims(p1, p2, distance):
     return dim
             
 def drawing(key, name, w, d, h, px, py, pz, posxy):
-    elevational_view_points = [posxy[0], posxy[1], posxy[2], posxy[3], posxy[0]]
+    elevational_view_points = [posxy[0], posxy[1], posxy[2], (posxy[3][0], posxy[3][1], 1.5, 1.5), posxy[0]]
     side_view_points = [(0, 0), (0, d), (h, d), (h, 0), (0, 0)]
     
     elevational_view = doc.blocks.new(name = 'elevational_view_' + key)
@@ -36,13 +37,55 @@ def drawing(key, name, w, d, h, px, py, pz, posxy):
     side_view.add_lwpolyline(side_view_points)
     msp.add_blockref('elevational_view_' + key, (px, py))
     msp.add_blockref('side_view_' + key, (px + w + 75, py))
-    make_dims((px, py), (px, py + d), distance=30)
-    make_dims((px, py + d), (px + w, py + d), distance=30)
+    make_dims((px, py), (px, py + d), distance=40)
+    make_dims((px, py + d), (px + w, py + d), distance=40)
     make_dims((px + w + 75, py), (px + w + 75, py + d), distance=30)
     msp.add_mtext(name, dxfattribs={
                                 'char_height': 24,
                                 'style': 'Calibri',
                                 }).set_location(insert=(px + 75, -40))
+    draw_triangle(px, py, w, d)        
+        
+        
+def draw_triangle(px, py, w, d):
+    pos = []
+    rotation = []
+    fill = []
+    
+    pos.append((px - 15, (py + d) / 2))
+    pos.append((px + w / 2, py + d + 15))
+    pos.append((px + w + 15, (py + d) / 2))
+    pos.append((px + w / 2, py - 15))
+    
+    rotation.extend([0, -90, 180, 90])
+    
+    fill.extend([0, 0, 0, 1])
+    
+    for tmp in range(4):
+        single_triangle(pos=pos[tmp], rotation=rotation[tmp], fill=fill[tmp])
+    
+    
+    
+def single_triangle(pos, rotation, fill):
+    if not hasattr(single_triangle, "counter"):
+        single_triangle.counter = 0  # it doesn't exist yet, so initialize it
+    single_triangle.counter += 1
+    
+    block_name = "triangle" + str(single_triangle.counter)
+    shape_test = doc.blocks.new(name = block_name)
+    points = [Vec2.from_deg_angle((360 / 3) * n) for n in range(3)]
+    points.append(points[0])
+    print(points)
+    if(fill):
+        hatch = shape_test.add_hatch(color = 1)
+        hatch.paths.add_polyline_path(points)
+    else:
+        points.append(points[0])
+        shape_test.add_lwpolyline(points, dxfattribs={'color' : 1})
+    
+    msp.add_blockref(block_name, pos, dxfattribs={'rotation' : rotation, 'xscale' : 9, 'yscale' : 9})
+
+
 drawing(keys[1], name[keys[1]], W[keys[1]], D[keys[1]], H[keys[1]], -900, 0, PZ[keys[1]], posXY[keys[1]])
 drawing(keys[2], name[keys[2]], W[keys[2]], D[keys[2]], H[keys[2]], 800, 0, PZ[keys[2]], posXY[keys[2]])
 drawing(keys[3], name[keys[3]], W[keys[3]], D[keys[3]], H[keys[3]], 0, 0, PZ[keys[3]], posXY[keys[3]])
