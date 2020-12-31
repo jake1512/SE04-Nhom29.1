@@ -86,14 +86,18 @@ def single_triangle(pos, rotation, fill):
     msp.add_blockref(block_name, pos, dxfattribs={'rotation' : rotation, 'xscale' : 9, 'yscale' : 9})
 
 
-drawing(keys[1], name[keys[1]], W[keys[1]], D[keys[1]], H[keys[1]], -900, 0, PZ[keys[1]], posXY[keys[1]])
-drawing(keys[2], name[keys[2]], W[keys[2]], D[keys[2]], H[keys[2]], 800, 0, PZ[keys[2]], posXY[keys[2]])
-drawing(keys[3], name[keys[3]], W[keys[3]], D[keys[3]], H[keys[3]], 0, 0, PZ[keys[3]], posXY[keys[3]])
-drawing(keys[4], name[keys[4]], W[keys[4]], D[keys[4]], H[keys[4]], 1700, 0, PZ[keys[4]], posXY[keys[4]])
-drawing(keys[5], name[keys[5]], W[keys[5]], D[keys[5]], H[keys[5]], 2700, 0, PZ[keys[5]], posXY[keys[5]])
-drawing(keys[6], name[keys[6]], W[keys[6]], D[keys[6]], H[keys[6]], 3200, 0, PZ[keys[6]], posXY[keys[6]])
-drawing(keys[7], name[keys[7]], W[keys[7]], D[keys[7]], H[keys[7]], 3900, 0, PZ[keys[7]], posXY[keys[7]])
-# drawing(keys[8], name[keys[8]], W[keys[8]], D[keys[8]], H[keys[8]], 4600, 0, PZ[keys[8]], posXY[keys[8]])
-    
+px, py = -900, 0
+for tmp in range(1, 8):
+    drawing(keys[tmp], name[keys[tmp]], W[keys[tmp]], D[keys[tmp]], H[keys[tmp]], px, py, PZ[keys[tmp]], posXY[keys[tmp]])
+    px += W[keys[tmp]] + 250
+
+# drawing(keys[1], name[keys[1]], W[keys[1]], D[keys[1]], H[keys[1]], -900, 0, PZ[keys[1]], posXY[keys[1]])
+# drawing(keys[2], name[keys[2]], W[keys[2]], D[keys[2]], H[keys[2]], 800, 0, PZ[keys[2]], posXY[keys[2]])
+# drawing(keys[3], name[keys[3]], W[keys[3]], D[keys[3]], H[keys[3]], 0, 0, PZ[keys[3]], posXY[keys[3]])
+# drawing(keys[4], name[keys[4]], W[keys[4]], D[keys[4]], H[keys[4]], 1700, 0, PZ[keys[4]], posXY[keys[4]])
+# drawing(keys[5], name[keys[5]], W[keys[5]], D[keys[5]], H[keys[5]], 2600, 0, PZ[keys[5]], posXY[keys[5]])
+# drawing(keys[6], name[keys[6]], W[keys[6]], D[keys[6]], H[keys[6]], 3000, 0, PZ[keys[6]], posXY[keys[6]])
+# drawing(keys[7], name[keys[7]], W[keys[7]], D[keys[7]], H[keys[7]], 3700, 0, PZ[keys[7]], posXY[keys[7]])
+# # drawing(keys[8], name[keys[8]], W[keys[8]], D[keys[8]], H[keys[8]], 4600, 0, PZ[keys[8]], posXY[keys[8]])
 
 doc.saveas('cabinet.dxf')
