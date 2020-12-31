@@ -8,8 +8,7 @@ def get_xml_data(filename):
     W = dict()
     D = dict()
     H = dict()
-    PX, PY, PZ = dict(), dict(), dict()
-    RX, RY, RZ = dict(), dict(), dict()
+    PX, PY = dict(), dict()
     posXY = dict()
 
     for part in root.iter('Part'):
@@ -23,10 +22,6 @@ def get_xml_data(filename):
             H[key] = (float) (value.find('H').text)
             PX[key] = (float) (value.find('PX').text)
             PY[key] = (float) (value.find('PY').text)
-            PZ[key] = (float) (value.find('PZ').text)
-            RX[key] = (float) (value.find('RZ').text)
-            RY[key] = (float) (value.find('RY').text)
-            RZ[key] = (float) (value.find('RZ').text)
             
         posxy = []
         for pointdef in part.iter('PointDef'):
@@ -34,4 +29,4 @@ def get_xml_data(filename):
             y = (float) (pointdef.get('posY'))
             posxy.append((x, y))
         posXY[key] = posxy
-    return name, W, D, H, PX, PY, PZ, RX, RY, RZ, posXY
+    return name, W, D, H, PX, PY, posXY
